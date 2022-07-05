@@ -7,5 +7,5 @@ pub enum RutrackError {
     #[error("io errors")]
     IOError(#[from] std::io::Error),
     #[error("websocket errors")]
-    TungstenitError(#[from] tokio_tungstenite::tungstenite::Error)
+    TungstenitError(#[from] tokio_tungstenite::tungstenite::Error),
 }

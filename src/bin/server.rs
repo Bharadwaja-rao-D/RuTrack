@@ -21,7 +21,7 @@ pub async fn handle_connection(stream: TcpStream) -> Result<(), RutrackError> {
 
     info!("websocket handshake done");
 
-    let (outgoing, incoming) = ws_stream.split();
+    let (_outgoing, _incoming) = ws_stream.split();
 
     return Ok(());
 }

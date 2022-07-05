@@ -1,9 +1,9 @@
-use serde::{Serialize, Deserialize};
+use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum MessageType{
+pub enum Message {
     Enroll(String, String),
     Verify(String, String),
     Chat(String),
-    Ask(String, u32)
+    Ask(String, u32),
 }
